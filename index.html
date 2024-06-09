@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="https://httpbin.org/anything" method="post">
+      <h1 tabindex="1">Namn</h1>
+
+      <div class="names">
+        <div class="firstname">
+          <label for="firstname" tabindex="2">Förnamn</label>
+          <input
+            id="firstname"
+            type="text"
+            name="firstname"
+            placeholder="Förnamn"
+            tabindex="3"
+          />
+        </div>
+
+        <div class="lastname">
+          <label for="lastname" tabindex="4">Efternamn</label>
+          <input
+            id="lastname"
+            type="text"
+            name="lastname"
+            placeholder="Efternamn"
+            tabindex="5"
+          />
+          <h2 tabindex="6">
+            Endast första bokstaven i ditt efternamn kommer att vara synligt för
+            andra användare
+          </h2>
+        </div>
+      </div>
+
+      <h1 tabindex="7">Kontaktuppgifter</h1>
+
+      <div class="contact">
+        <div class="phonenumber">
+          <div>
+            <label for="areacode"></label>
+            <select name="areacode" id="areacode" tabindex="8">
+              <option value="sweden">+46</option>
+              <option value="denmark">+45</option>
+              <option value="norway">+47</option>
+              <option value="finland">+358</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="phonenumber"></label>
+            <input
+              id="phonenumber"
+              type="number"
+              name="phonenumber"
+              placeholder="Telefonnummer"
+              tabindex="9"
+            />
+          </div>
+        </div>
+
+        <div class="contactinner">
+          <div>
+            <label for="checkbox"></label>
+            <input
+              id="checkbox"
+              type="checkbox"
+              name="checkbox"
+              tabindex="10"
+            />
+          </div>
+
+          <h2 tabindex="11">Visa telefonnumret på min profil</h2>
+        </div>
+
+        <div class="mail">
+          <label for="mail" tabindex="12">E-postadress</label>
+          <input
+            id="mail"
+            type="text"
+            name="mail"
+            placeholder="Din e-postadress"
+            tabindex="13"
+          />
+          <h2 tabindex="14">
+            Om du ändrar din e-postadress behöver du bekräfta den via länken i
+            det mail som skickas till din valda e-post.
+          </h2>
+        </div>
+      </div>
+
+      <h1 tabindex="15">Lösenord</h1>
+
+      <div class="password">
+        <div class="passwordinner">
+          <label for="password"></label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Lösenord"
+            required
+            aria-required="true"
+            tabindex="16"
+          />
+        </div>
+
+        <div class="repeat">
+          <label for="password"></label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Bekräfta lösenord"
+            required
+            aria-required="true"
+            tabindex="17"
+          />
+        </div>
+      </div>
+      <button type="submit" tabindex="18">Bekräfta ändringar</button>
+    </form>
+  </body>
+</html>
